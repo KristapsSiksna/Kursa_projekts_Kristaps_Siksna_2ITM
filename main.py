@@ -100,6 +100,10 @@ for i in range(1, 10):
 
 intervals = list(interval_dict.values())
 
+for i in range(0,len(intervals)):
+    print('Interval ' + str(i + 1) + ' min', np.min(intervals[i]))
+    print('Interval '+str(i + 1)+' max', np.max(intervals[i]))
+
 # ----------------------------------------------- plot all interval images-------------------------------------------------
 fig, ax = plt.subplots(nrows=3, ncols=3, figsize=(16, 16), subplot_kw={'projection': wcs})
 index = 0
